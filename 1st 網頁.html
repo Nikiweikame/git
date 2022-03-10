@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>1st練習網頁</title>
+  </head>
+  <body>
+    <h1>form</h1>
+    <ol>
+      <li>action</li>
+      <form action="http://www.example.com/subsxcribe.php"method="get">
+        <p>This is where the form controls will appear. 表單用action送到指定網址 透過網址傳送get,封包傳送post</p>
+      </form>
+      <li>input</li>
+      <ol>
+        <li>
+      <form action="http://www.example.com/subsxcribe.php"method="get">
+        <p>Username<input type="text" name="username" size="15" maxlength="30" /></p>
+      </form>
+        </li>
+        <li>
+      <form action="http://www.example.com/subsxcribe.php"method="get">
+        <p>password<input type="password" name="username" size="15" maxlength="30" /></p>
+      </form>
+      </li>
+      <li>
+      <form action="http://www.example.com/subsxcribe.php"method="get">
+        <p>文字方塊textarea</p>
+        <textarea name="comments" col="20" row="4" >輸入你的留言</textarea>
+      </form>
+      </li>
+      <li>
+        <form action="http://www.example.com/subsxcribe.php"method="get">
+          <p>
+            請替教主的著裝：單選
+            <br />
+            <input type="radio" name="genre" value="AA1" checked="checked" /> 西裝
+            <input type="radio" name="genre" value="AA2" checked="checked" /> 神父裝
+            <input type="radio" name="genre" value="AA3" checked="checked" /> 運動服
+          </p>
+        </form>
+        </li>
+        <li>
+        <form action="http://www.example.com/subsxcribe.php"method="get">
+          <p>
+            請替教主的著裝：多選
+            <br />
+            <input type="checkbox" name="genre" value="AA1" checked="checked" /> 西裝
+            <input type="checkbox" name="genre" value="AA2" checked="checked" /> 領帶
+            <input type="checkbox" name="genre" value="AA3" checked="checked" /> 皮鞋
+          </p>
+        </form>
+        </li>
+        <li>夾帶檔案 上傳
+          <form action="http://www.example.com/subsxcribe.php"method="post">
+            <p>
+              請上傳檔案
+            </p>
+            <input type="file" name="file"> <br />
+            <input type="submit" value="上傳" >
+          </form>
+
+        </li>
+        </ol>
+        <li>select
+          <ol>
+            <li>
+              <form action="http://www.example.com/subsxcribe.php"method="get">
+                <p>
+                  請替教主的著裝：單選
+                </p>
+                  <select name="devices">
+                  <option value="AA1" checked="checked" > 西裝</option>
+                  <option value="AA2" checked="checked" > 燕尾服</option>                  
+                  <option value="AA3" checked="checked" > 小丑</option>
+                </select>
+                
+              </form>
+            </li>
+            <li>
+              <form action="http://www.example.com/subsxcribe.php"method="get">
+                <p>
+                  請替教主的著裝：複選
+                </p>
+                  <select name="devices" size="3" multiple="multiple">
+                  <option value="AA1" checked="checked" > 西裝</option>
+                  <option value="AA2" checked="checked" > 燕尾服</option>                  
+                  <option value="AA3" checked="checked" > 小丑</option>
+                </select>
+                
+              </form>
+            </li>
+          </ol>
+          <li>button 按鈕
+            <form action="http://www.example.com/subsxcribe.php">
+              <button>
+                <img src="add.jpg" alt="ADD" width="40" height="15" />ADD</button>
+                <input type="hidden" name="file"value="lyrics/"/>
+          </li>
+          <li>label
+            <label>age:<input type="text" name="age"/></label>
+            <br/>
+          </li>
+
+
+    </ol>
+
+  </body>
+</html>
