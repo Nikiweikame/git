@@ -1,0 +1,7 @@
+@mixin separate($height: 2px, $px: 16px, $color: #000000) {
+  opacity: 1;
+  height: $height;
+  margin-left: $px;
+  margin-right: $px;
+  background-color: $color;
+}

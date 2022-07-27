@@ -1,0 +1,8 @@
+@use "../abstracts/container";
+@use "../components/tasks";
+@use "../components/plus";
+
+main {
+    min-height: calc( 100vh - 158px );
+  background-color: #e1e1e1;
+}

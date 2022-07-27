@@ -1,0 +1,64 @@
+@use "../abstracts/breakpoint";
+@use "../abstracts/text";
+@use "../abstracts/color";
+
+.top-nav {
+  .navbar-nav {
+    @include breakpoint.size-lg {
+      box-shadow: 0px 0px 8px black;
+    }
+  }
+
+  .nav-item {
+    @include breakpoint.size-lg {
+      border-right: 1px solid #eeeeee;
+    }
+    .nav-link {
+      padding: 20px 16px;
+      @include breakpoint.size-xl {
+        padding: 20px 24px;
+      }
+    }
+  }
+  .nav-link {
+    @include text.font-style(inherit, #000000, bold);
+    &.active {
+      @include breakpoint.size-lg {
+        color:  color.$text-light;
+        background-color: #80b701;
+      }
+    }
+    &:hover {
+      color:  color.$text-light;
+      background-color: #80b701;
+    }
+    &.show {
+      color:  color.$text-light;
+      background-color: #80b70177;
+    }
+  }
+
+  .dropdown-item {
+    @extend .nav-link;
+  }
+
+  .dropdown-toggle {
+    &::after {
+      content: initial;
+    }
+  }
+
+  form {
+    padding: 13px 0;
+    background-color:  color.$bg-light;
+    @extend .navbar-nav;
+    input[type="search"]::-webkit-search-cancel-button {
+      display: none;
+    }
+
+    .btn {
+      top: 13px;
+      right: 16px;
+    }
+  }
+}

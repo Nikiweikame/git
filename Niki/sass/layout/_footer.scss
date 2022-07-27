@@ -1,0 +1,14 @@
+@use "../abstracts/container";
+
+.footer {
+  background-color: #e1e1e1;
+  height: 82px;
+  &__container {
+    @extend %container;
+    padding: 8px 0 8px 33px;
+  }
+  p {
+    font-size: 24px;
+    color: #c8c8c8;
+  }
+}

@@ -1,0 +1,40 @@
+@use "../abstracts/breakpoint";
+@use "../abstracts/text";
+@use "../abstracts/color";
+
+.introduction {
+  h2 {
+    color: color.$text-black;
+  }
+  .card {
+    color: #939393;
+    border: 0;
+    &-text {
+      span {
+        color: color.$text-black;
+      }
+    }
+    i {
+      @include text.font-style(32px, #dadada, 900);
+      // font-size: 32px;
+      // color: #dadada;
+      display: block;
+      text-align: center;
+      @include breakpoint.size-md {
+        font-size: 48px;
+      }
+    }
+
+    &-title:not(h2) {
+      display: inline-block;
+      background-color: #81b701;
+      @include text.font-style(18px, #ffffff);
+    }
+  }
+
+  &__choose {
+    .card {
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+}
