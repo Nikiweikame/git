@@ -1,0 +1,22 @@
+{
+  "name": "j1",
+  "version": "1.0.0",
+  "description": "Niki-j1",
+  "main": "index.js",
+  "scripts": {
+    "test": "j1-start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/dwatow/j1.git"
+  },
+  "author": "Niki <frank29580649@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dwatow/j1/issues"
+  },
+  "homepage": "https://gitlab.com/dwatow/j1#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
