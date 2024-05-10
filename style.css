@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.Scriptarea {
+  padding: 32px;
+}
+.txtarea {
+  width: 50vw;
+}
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.big {
+  font-size: 48px;
+}
+.small {
+  font-size: 8px;
+}
+.bt,
+.undo {
+  margin: 16px;
+  padding: 16px;
+  background-color: white;
+  color: #282c34;
+  width: 200px;
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.link {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  color: #282c34;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home {
+  color: white;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  background: green;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  color: red;
+}
+
+.content {
+  text-align: center;
+  color: orange;
+}
+
+#title {
+  font-size: 36px;
+}
+
+.title-underline {
+  text-decoration: underline;
+}
+
+.display-none {
+  display: none;
+}
