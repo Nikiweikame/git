@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const input_Element = document.createElement("input");
+        input_Element.id = "input-text";
+        document.querySelector(".content label").appendChild(input_Element);
+      });
+      $(function(){
+        const label = $("[for=input-text]");
+        $("<input id=\"text_input\">").appendTo(label);
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <section>
+      <h2 class="title">標題一</h2>
+    </section>
+    <section>
+      <h2 class="title">標題二</h2>
+    </section>
+    <div class="content">
+      <label for="input-text">內文一：</label>
+    </div>
+  </body>
+</html>
